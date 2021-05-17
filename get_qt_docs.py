@@ -6,7 +6,7 @@ import bs4
 
 
 def get_last_version():
-    qt_release_repo = "https://download.qt.io/official_releases/qt/"
+    qt_release_repo = "https://download.qt.io/archive/qt/"
 
     with urllib.request.urlopen(qt_release_repo) as p:
         page = bs4.BeautifulSoup(p.read(), 'html5lib')
